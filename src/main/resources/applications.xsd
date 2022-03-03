@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.epam.org/applications"
+	xmlns:app="http://www.epam.org/applications">
+	
+	
+	<element name="applications" >
+        <complexType>
+            <sequence>
+                <element name="application" type="app:Application" minOccurs="1" maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+	
+	<complexType name="Application" >
+        <sequence>
+            <element name="name" type="string" />
+            <element name="email" type="string"/>
+            <element name="privelege" type="string" />
+            <element name="school" type="string" />
+            <element name="specialty" type="string" />
+        </sequence>
+        <attribute name="id" type="ID" use="required" />
+    </complexType>
+
+	
+
+</schema>

@@ -1,0 +1,5 @@
+package by.epam.tc.dao;
+
+public enum AppTagName {
+APPLICATION,NAME,EMAIL,PRIVELEGE,SCHOOL,SPECIALTY,APPLICATIONS;
+}
